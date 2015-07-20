@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="228" height="14" tilewidth="16" tileheight="16" nextobjectid="139">
+ <tileset firstgid="1" name="superMarioMap" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="superMarioMap.png" width="511" height="511"/>
+  <tile id="0">
+   <properties>
+    <property name="boundType" value="2"/>
+    <property name="collisionType" value="1"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="collisionType" value="2"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="collisionType" value="2"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="boundType" value="3"/>
+    <property name="collisionType" value="1"/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="collisionType" value="2"/>
+   </properties>
+  </tile>
+  <tile id="59">
+   <properties>
+    <property name="collisionType" value="2"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="boundType" value="2"/>
+    <property name="collisionType" value="1"/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="collisionType" value="1"/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="collisionType" value="0"/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="collisionType" value="0"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="boundType" value="4"/>
+    <property name="collisionType" value="1"/>
+   </properties>
+  </tile>
+  <tile id="533">
+   <properties>
+    <property name="boundType" value="4"/>
+   </properties>
+  </tile>
+  <tile id="600">
+   <properties>
+    <property name="boundType" value="1"/>
+    <property name="collisionType" value="1"/>
+   </properties>
+  </tile>
+  <tile id="845">
+   <properties>
+    <property name="boundType" value="3"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt07EJwDAQwEBD5rP3HydDfMAiXHG9Gu1nrQ184gzd7oc/8SN0+BE6/AgdfoQOP0KHH6HDj9DhR+jwI3T4ETr8CB1+hI7pjy8Tu+aO
+  </data>
+ </layer>
+ <layer name="cloud" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt1F0KgkAAhVFXalrWKvKnbOHe56BiUELkHPieHPTCgFUFHNE13Va+o06n1KxeU85++49kTq8vz9t0TpfUfThzT30aNtpUcsf22/9ui3/EXo1pSo/0/NM3f91xCfvL2Q8AAAAAAAAAAOzFAoSbJxE=
+  </data>
+ </layer>
+ <layer name="mountain" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt11lOwmAUQOHGJ8Rd4AQ74BFR8VFdCLgPUNbB4DqcFoAjrMXTRJM/pAUahkJyvuS8UOh/03BDiCJJkiRJkiRJkqTtVt3LewJJsWt28YZu3Ukpd032sEV3c/axQPtUpIMNzLVqzp+veP5itNvzr/v5t9nBDt3TA3VTdvKYTuiUylTJeE6JDuloiVmX4fz5zh+eH3+fd23+TT3/HvvXpwEN6TFlH8/pgi6pQVcz7vlBn/RF33+v1eiM6gnvH9H7nDkX8UNjmiRcc/71z98J7tWauhae//8bmUX4+Wmrmn+WLM8/SS1Knz/0xP490wu90pv/ISVJWtgvUiA1zQ==
+  </data>
+ </layer>
+ <layer name="land" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt0CEOACAQA8H7Nr9HoTAkNCdgJllb0SoAAAAAAAAAAAAA6DO0lfjGx9k/9W9LYuN254X8cN4E9hDQ6w==
+  </data>
+ </layer>
+ <layer name="flagpole" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt0zENACAAwDDwbwlhnFxoYCGtgj0bAwD+s+brAuDafoQMP0KHH6HDj9DhR+jwI3T4ETr8CB1+BADgZwd8ygl/
+  </data>
+ </layer>
+ <layer name="pipe" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt1rENQCEIBUAX0UX+338u7S3EGBu5S+gIDXmBUgAAAAAAAAByq6PahV5gtsrQN+oPztrphUyit2qVIXl8z+kf4w/aF82GPOZzuid7BoA3deOWBoA=
+  </data>
+ </layer>
+ <layer name="bound" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt2WsKhCAUhuFTs4dZVv9bmYtpc/NnAhGPly5Hs/cBKcLS5HyQJAIAQJ+2qfUMAACAhXVuPQMbU6Zpfc+sT+292nwkuPaGzzT3bwDackIegR44IY9AD8IsjpzHcC+z7438Y++WT13/K95Nu1fb5/nrrJ2XPL9mzJ1TznPC2j+SA3+/fWS9Y1kcOY8YWyxTJfUcq33rLGhZJI94olSmUjWt1b5lHlJZJI94mpJMxeo6VftWmchl8c6xvy/5zwcAgKUfYSQ5FQ==
+  </data>
+ </layer>
+ <layer name="trap" width="228" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt0DEKADAIBEEhz/X/vUg+IJgqzMC1W1wEAAAAAAAAAAAAAADQ8ty9aGw7P/DDXAEqHQMD
+  </data>
+ </layer>
+ <layer name="coin" width="228" height="14" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1DEKwCAMQFHp/Vfv69DFQYIJtA6+B05u4SetAQAAAJzXn/cBZ817aCfv4xZTFbWjqzy3mKqoHV3lreZkduyI2tEV/CfareofAAAAfG0AVdIOwA==
+  </data>
+ </layer>
+ <objectgroup name="bound1">
+  <object id="28" name="bound_start" x="0" y="224"/>
+  <object id="29" name="bound_end" x="1103" y="192"/>
+ </objectgroup>
+ <objectgroup name="bound2">
+  <object id="30" name="bound_start" x="1136" y="224"/>
+  <object id="31" name="bound_end" x="1376" y="192"/>
+ </objectgroup>
+ <objectgroup name="bound3">
+  <object id="32" name="bound_start" x="1424" y="224"/>
+  <object id="33" name="bound_end" x="2448" y="192"/>
+ </objectgroup>
+ <objectgroup name="bound4">
+  <object id="34" name="bound_start" x="2480" y="224"/>
+  <object id="35" name="bound_end" x="3648" y="192"/>
+ </objectgroup>
+ <objectgroup name="bound5">
+  <object id="36" name="bound_start" x="256" y="144"/>
+  <object id="37" name="bound_end" x="272" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound6">
+  <object id="38" name="bound_start" x="320" y="144"/>
+  <object id="39" name="bound_end" x="400" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound7">
+  <object id="40" name="bound_start" x="352" y="80"/>
+  <object id="41" name="bound_end" x="368" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound8">
+  <object id="43" name="bound_start" x="1232" y="144"/>
+  <object id="44" name="bound_end" x="1280" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound9">
+  <object id="45" name="bound_start" x="1280" y="80"/>
+  <object id="46" name="bound_end" x="1408" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound10">
+  <object id="47" name="bound_start" x="1456" y="80"/>
+  <object id="48" name="bound_end" x="1520" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound11">
+  <object id="49" name="bound_start" x="1504" y="144"/>
+  <object id="50" name="bound_end" x="1520" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound12">
+  <object id="51" name="bound_start" x="1600" y="144"/>
+  <object id="52" name="bound_end" x="1632" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound13">
+  <object id="53" name="bound_start" x="1696" y="144"/>
+  <object id="54" name="bound_end" x="1712" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound14">
+  <object id="55" name="bound_start" x="1744" y="144"/>
+  <object id="56" name="bound_end" x="1760" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound15">
+  <object id="57" name="bound_start" x="1792" y="144"/>
+  <object id="58" name="bound_end" x="1808" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound16">
+  <object id="59" name="bound_start" x="1744" y="80"/>
+  <object id="60" name="bound_end" x="1760" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound17">
+  <object id="61" name="bound_start" x="1888" y="144"/>
+  <object id="62" name="bound_end" x="1904" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound18">
+  <object id="63" name="bound_start" x="1936" y="80"/>
+  <object id="64" name="bound_end" x="1984" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound19">
+  <object id="65" name="bound_start" x="2048" y="80"/>
+  <object id="66" name="bound_end" x="2064" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound20">
+  <object id="67" name="bound_start" x="2064" y="144"/>
+  <object id="68" name="bound_end" x="2096" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound21">
+  <object id="69" name="bound_start" x="2096" y="80"/>
+  <object id="70" name="bound_end" x="2112" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound22">
+  <object id="71" name="bound_start" x="2144" y="192"/>
+  <object id="72" name="bound_end" x="2160" y="176"/>
+ </objectgroup>
+ <objectgroup name="bound23">
+  <object id="73" name="bound_start" x="2160" y="192"/>
+  <object id="74" name="bound_end" x="2176" y="160"/>
+ </objectgroup>
+ <objectgroup name="bound24">
+  <object id="75" name="bound_start" x="2176" y="192"/>
+  <object id="76" name="bound_end" x="2192" y="144"/>
+ </objectgroup>
+ <objectgroup name="bound25">
+  <object id="77" name="bound_start" x="2192" y="192"/>
+  <object id="78" name="bound_end" x="2208" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound26">
+  <object id="79" name="bound_start" x="2240" y="192"/>
+  <object id="80" name="bound_end" x="2255.5" y="127"/>
+ </objectgroup>
+ <objectgroup name="bound27">
+  <object id="81" name="bound_start" x="2256" y="192"/>
+  <object id="82" name="bound_end" x="2272" y="144"/>
+ </objectgroup>
+ <objectgroup name="bound28">
+  <object id="83" name="bound_start" x="2272" y="192"/>
+  <object id="84" name="bound_end" x="2288" y="160"/>
+ </objectgroup>
+ <objectgroup name="bound29">
+  <object id="85" name="bound_start" x="2288" y="192"/>
+  <object id="86" name="bound_end" x="2304" y="176"/>
+ </objectgroup>
+ <objectgroup name="bound30">
+  <object id="90" name="bound_start" x="2368" y="192"/>
+  <object id="91" name="bound_end" x="2384" y="176"/>
+ </objectgroup>
+ <objectgroup name="bound31">
+  <object id="92" name="bound_start" x="2384" y="192"/>
+  <object id="93" name="bound_end" x="2400" y="160"/>
+ </objectgroup>
+ <objectgroup name="bound32">
+  <object id="94" name="bound_start" x="2400" y="192"/>
+  <object id="95" name="bound_end" x="2415.75" y="143.5"/>
+ </objectgroup>
+ <objectgroup name="bound33">
+  <object id="96" name="bound_start" x="2416" y="192"/>
+  <object id="97" name="bound_end" x="2448" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound34">
+  <object id="98" name="bound_start" x="2480" y="192"/>
+  <object id="99" name="bound_end" x="2496" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound35">
+  <object id="100" name="bound_start" x="2496" y="192"/>
+  <object id="101" name="bound_end" x="2511.25" y="144.5"/>
+ </objectgroup>
+ <objectgroup name="bound36">
+  <object id="102" name="bound_start" x="2512" y="192"/>
+  <object id="103" name="bound_end" x="2527.25" y="160"/>
+ </objectgroup>
+ <objectgroup name="bound37">
+  <object id="104" name="bound_start" x="2528" y="192"/>
+  <object id="105" name="bound_end" x="2544" y="176"/>
+ </objectgroup>
+ <objectgroup name="bound38">
+  <object id="106" name="bound_start" x="2688" y="144"/>
+  <object id="107" name="bound_end" x="2752" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound39">
+  <object id="109" name="bound_start" x="2896" y="192"/>
+  <object id="110" name="bound_end" x="2912" y="176"/>
+ </objectgroup>
+ <objectgroup name="bound40">
+  <object id="111" name="bound_start" x="2912" y="192"/>
+  <object id="112" name="bound_end" x="2928" y="160"/>
+ </objectgroup>
+ <objectgroup name="bound41">
+  <object id="113" name="bound_start" x="2928" y="192"/>
+  <object id="114" name="bound_end" x="2944" y="143"/>
+ </objectgroup>
+ <objectgroup name="bound42">
+  <object id="115" name="bound_start" x="2944" y="192"/>
+  <object id="116" name="bound_end" x="2960" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound43">
+  <object id="117" name="bound_start" x="2960" y="192"/>
+  <object id="118" name="bound_end" x="2976" y="112"/>
+ </objectgroup>
+ <objectgroup name="bound44">
+  <object id="119" name="bound_start" x="2976" y="192"/>
+  <object id="120" name="bound_end" x="2992" y="96"/>
+ </objectgroup>
+ <objectgroup name="bound45">
+  <object id="121" name="bound_start" x="2992" y="192"/>
+  <object id="122" name="bound_end" x="3008" y="80"/>
+ </objectgroup>
+ <objectgroup name="bound46">
+  <object id="123" name="bound_start" x="3008" y="192"/>
+  <object id="124" name="bound_end" x="3040" y="64"/>
+ </objectgroup>
+ <objectgroup name="bound47">
+  <object id="125" name="bound_start" x="448" y="192"/>
+  <object id="126" name="bound_end" x="480" y="160"/>
+ </objectgroup>
+ <objectgroup name="bound48">
+  <object id="129" name="bound_start" x="608" y="192"/>
+  <object id="130" name="bound_end" x="640" y="144"/>
+ </objectgroup>
+ <objectgroup name="bound49">
+  <object id="131" name="bound_start" x="736" y="192"/>
+  <object id="132" name="bound_end" x="768" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound50">
+  <object id="133" name="bound_start" x="912" y="192"/>
+  <object id="134" name="bound_end" x="944" y="128"/>
+ </objectgroup>
+ <objectgroup name="bound51">
+  <object id="135" name="bound_start" x="2608" y="192"/>
+  <object id="136" name="bound_end" x="2640" y="160"/>
+ </objectgroup>
+ <objectgroup name="bound52">
+  <object id="137" name="bound_start" x="2864" y="192"/>
+  <object id="138" name="bound_end" x="2896" y="160"/>
+ </objectgroup>
+ <objectgroup name="enemy">
+  <object id="139" name="mushroom" x="648" y="176"/>
+  <object id="140" name="mushroom" x="648" y="176"/>
+  <object id="141" name="mushroom" x="824" y="176"/>
+  <object id="142" name="mushroom" x="848" y="176"/>
+  <object id="143" name="mushroom" x="1560" y="176"/>
+  <object id="144" name="mushroom" x="1584" y="176"/>
+  <object id="145" name="mushroom" x="1832" y="176"/>
+  <object id="146" name="mushroom" x="1856" y="176"/>
+  <object id="147" name="mushroom" x="1992" y="176"/>
+  <object id="148" name="mushroom" x="2016" y="176"/>
+  <object id="149" name="mushroom" x="2056" y="176"/>
+  <object id="150" name="mushroom" x="2080" y="176"/>
+  <object id="151" name="mushroom" x="2792" y="176"/>
+  <object id="152" name="mushroom" x="2816" y="176"/>
+  <object id="153" name="tortoise" x="1720" y="176"/>
+  <object id="154" name="mushroom" x="1288" y="48"/>
+  <object id="155" name="mushroom" x="1320" y="48"/>
+  <object id="156" name="flower" x="752" y="112"/>
+ </objectgroup>
+ <objectgroup name="player">
+  <object id="157" name="start_point" x="32" y="176"/>
+  <object id="158" name="end_point" x="3528" y="176"/>
+ </objectgroup>
+</map>

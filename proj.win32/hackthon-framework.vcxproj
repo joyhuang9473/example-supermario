@@ -201,12 +201,15 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y</Command>
     <Image Include="..\Resources\Buttons\signExitEnable.png" />
     <Image Include="..\Resources\Buttons\signStart.png" />
     <Image Include="..\Resources\Buttons\signStartEnable.png" />
+    <Image Include="..\Resources\Characters\flower.png" />
     <Image Include="..\Resources\Characters\hero-kisi.png" />
-    <Image Include="..\Resources\Map\floor.jpg" />
+    <Image Include="..\Resources\Characters\mushroom.png" />
+    <Image Include="..\Resources\Characters\tortoise.png" />
+    <Image Include="..\Resources\Map\superMarioMap.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\Characters\hero-kisi.plist" />
-    <None Include="..\Resources\Map\floor.tmx" />
+    <None Include="..\Resources\Map\MarioMap1.tmx" />
     <None Include="..\Resources\Settings\default.plist" />
   </ItemGroup>
   <ItemGroup>

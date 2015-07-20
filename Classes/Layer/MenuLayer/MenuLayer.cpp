@@ -50,7 +50,10 @@ bool MenuLayer::init() {
 
 void MenuLayer::menuStartCallback() {
     SimpleAudioEngine::getInstance()->stopBackgroundMusic();
-    Director::getInstance()->replaceScene(GameScene::create());
+
+	auto scene = GameScene::createWithPhysicsWorld();
+
+	Director::getInstance()->replaceScene(scene);
 }
 
 void MenuLayer::menuCloseCallback(Ref* pSender) {

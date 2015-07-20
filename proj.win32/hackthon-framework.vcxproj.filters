@@ -201,22 +201,31 @@
     <Image Include="..\Resources\Buttons\signStartEnable.png">
       <Filter>resource\Buttons</Filter>
     </Image>
-    <Image Include="..\Resources\Map\floor.jpg">
+    <Image Include="..\Resources\Characters\hero-kisi.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Map\superMarioMap.png">
       <Filter>resource\Map</Filter>
     </Image>
-    <Image Include="..\Resources\Characters\hero-kisi.png">
+    <Image Include="..\Resources\Characters\flower.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\mushroom.png">
+      <Filter>resource\Characters</Filter>
+    </Image>
+    <Image Include="..\Resources\Characters\tortoise.png">
       <Filter>resource\Characters</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Resources\Map\floor.tmx">
-      <Filter>resource\Map</Filter>
-    </None>
     <None Include="..\Resources\Settings\default.plist">
       <Filter>resource\Settings</Filter>
     </None>
     <None Include="..\Resources\Characters\hero-kisi.plist">
       <Filter>resource\Characters</Filter>
+    </None>
+    <None Include="..\Resources\Map\MarioMap1.tmx">
+      <Filter>resource\Map</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
