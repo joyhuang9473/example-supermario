@@ -27,6 +27,10 @@ private:
     Player* m_player;
 
     cocos2d::TMXTiledMap* m_map;
+
+	cocos2d::PhysicsWorld* m_world;
+
+	bool isInterrupt;
 };
 
 #endif
