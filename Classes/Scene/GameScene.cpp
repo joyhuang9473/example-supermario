@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "MenuScene.h"
 #include "../Layer/GameLayer/GameLayer.h"
 
 USING_NS_CC;
@@ -8,11 +9,23 @@ bool GameScene::init() {
         return false;
     }
 
-    Director::getInstance()->getEventDispatcher()->addCustomEventListener("missionComplete", CC_CALLBACK_0(GameScene::createCompleteDialog, this));
-    Director::getInstance()->getEventDispatcher()->addCustomEventListener("missionFailed", CC_CALLBACK_0(GameScene::createFailedDialog, this));
+	Director::getInstance()->getEventDispatcher()->addCustomEventListener("missionComplete", CC_CALLBACK_0(GameScene::createCompleteDialog, this));
+	Director::getInstance()->getEventDispatcher()->addCustomEventListener("missionFailed", CC_CALLBACK_0(GameScene::createFailedDialog, this));
 
-    this->addChild(GameLayer::create());
     return true;
+}
+
+Scene* GameScene::createWithPhysicsWorld() {
+	auto scene = GameScene::createWithPhysics();
+
+	scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+
+	auto layer = GameLayer::create();
+	layer->setPhysicsWorld(scene->getPhysicsWorld());
+	layer->initPhysics();
+
+	scene->addChild(layer);
+	return scene;
 }
 
 void GameScene::createCompleteDialog() {
@@ -32,5 +45,5 @@ void GameScene::createFailedDialog() {
 }
 
 void GameScene::menuCallback() {
-
+	Director::getInstance()->replaceScene(MenuScene::create());
 }

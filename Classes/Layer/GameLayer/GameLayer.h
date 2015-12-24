@@ -21,11 +21,16 @@ public:
 	bool collisionDetection(const BoundingBox &bodyBoxA, const BoundingBox &bodyBoxB);
 	void updateActionScope(float dt);
 
+	void setPhysicsWorld(cocos2d::PhysicsWorld* world);
 
 private:
     Player* m_player;
 
     cocos2d::TMXTiledMap* m_map;
+
+	cocos2d::PhysicsWorld* m_world;
+
+	bool isInterrupt;
 };
 
 #endif
