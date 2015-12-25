@@ -1,4 +1,4 @@
-![example-supermario@460](http://imgur.com/Q8Hwymf.png)
+![example-supermario@480](http://imgur.com/LIbLyFj.png)
 
 Example-SuperMario
 =========
@@ -31,7 +31,7 @@ Tilemap: `MarioMap1`.
 
 - MarioMap1
 
-![MarioMap1](http://imgur.com/FeHLBp8.png)
+![MarioMap1@480](http://imgur.com/AmdQk99.png)
 
 
 Installation
@@ -56,11 +56,11 @@ for mac:
 Screenshot
 -----------------------
 
-![screenshot1](http://imgur.com/ilZgTXv.png)
+![screenshot1](http://imgur.com/jTSA0tV.png)
 
-![screenshot2](http://imgur.com/VuvV7fe.png)
+![screenshot2](http://imgur.com/5piRCeE.png)
 
-![screenshot3](http://imgur.com/oe62gmL.png)
+![screenshot3](http://imgur.com/rzg0QFd.png)
 
 More details in [http://imgur.com/a/7NAMG](http://imgur.com/a/7NAMG)
 
